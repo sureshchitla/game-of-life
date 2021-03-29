@@ -419,14 +419,7 @@
                     </plugin>
                 </plugins>
             </build>
-            <distributionManagement>
-     <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
-      </snapshotRepository>
-        </distributionManagement>
-
-            <reporting>
+               <reporting>
                 <plugins>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
@@ -500,6 +493,13 @@
                     </plugin>
                 </plugins>
             </reporting>
+          <distributionManagement>
+          <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+          </snapshotRepository>
+          </distributionManagement>
+
         </profile>
     </profiles>
 </project>
